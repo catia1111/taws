@@ -1,0 +1,296 @@
+/* GERAL */
+body {
+    /*background-color: rgb(247, 240, 240);*/
+    background-color: white;
+
+}/* descartar */
+#creator{ 
+    color:#03035a;
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    position:relative;
+    padding-top: 50%;
+    display:block;
+} /* descartar */
+
+
+a {
+    text-decoration:none;
+
+}
+/* **************************************************************
+*****************************************************************
+*************************************************************** */
+
+/* INDEX */
+p.mainTitle1 { 
+    font-family: "Abril Fatface";
+    font-size: 50px;
+    color:#03035a;
+    text-align: center;
+} /* descartar */
+/* **************************************************************
+*****************************************************************
+*************************************************************** */
+
+/* P2  */
+p.mainTitle {
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color:#03035a;
+    margin: 30px;
+    position: absolute;
+    margin-top: 60px;
+}
+
+input[type=text] {
+    width: 150px;
+    box-sizing:border-box;
+    border: 1px solid #f5f4f4;
+    font-size: 12px;
+    background-color: #f5f4f4;
+    padding: 10px 10px 10px 5px;
+}
+
+input[type=text]:focus {
+    width: 150px;
+}
+
+.sidebar{
+    display:block;
+    overflow:hidden;
+    padding-top: 1px;
+    float:left;
+    margin: 0px;
+}
+
+#DivPesquisa{
+    padding-top: 40px;
+    padding-left: 30px;
+    position: relative;
+    margin-top: 100px;
+}
+
+#cidadeInput{
+    color: rgb(120, 120, 120);
+    font-family: helvetica, sans-serif;
+    padding-left: 35px;
+    font-size: 12px;
+}
+
+#areaInput{
+    background-color:#f5f4f4;
+    display: flex;
+    padding-left: 33px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0px;
+    margin-top: 5px;
+    color: rgb(120, 120, 120);
+    font-size: 12px;
+
+}
+
+#searchButton, #grafoBT, #more{
+    display: flex; 
+    background-color: #03035a;
+    color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 15px;
+    padding:7px 15px;
+    margin-top: 10px;
+    border-style: hidden;
+}
+
+#container {
+    display: none;
+
+
+}
+
+
+/*::-webkit-scrollbar{
+width: 10px;   
+}
+::-webkit-scrollbar-thumb{
+background: rgb(200,200,200);
+}*/
+#info{
+    list-style-type: none;
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0px;
+} /* descartar */
+li{
+    color:#03035a;
+    font-family: "Helvetica", sans-serif;
+    font-size: 90%;
+} /* descartar */
+p.title2 {
+    font-family: "Abril Fatface";
+    font-size: 50px;
+    color:#03035a;
+    text-align: center;
+} /* descartar */
+.results_artists li {
+    position: relative;
+} /* descartar */
+.results_artists {
+    display:flex;
+    padding-right: 250px;
+    padding-left: 250px;
+} /* descartar */
+.legenda {
+    position:absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    color: white;
+    font-family: helvetica, sans-serif;
+    font-size: 15px;
+} /* descartar */
+.results_artists #info:hover img {
+    filter: brightness(0.5);
+} /* descartar */
+.results_artists #info:hover .legenda {
+    opacity: 1;
+} /* descartar */
+.results_artists #info:hover .legenda, .results_artists #info:hover img {
+    transition: 0.5s;
+} /* descartar */
+#profile_pic {
+
+    height: 120px;
+} /* descartar */
+#intel_per{
+    padding: 0;
+    line-height: 0px;
+    position: absolute;
+} /* descartar */
+
+
+
+#mapa {
+    width:  100vw;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    z-index: -1;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#userData{
+    bottom: 0px;
+    left: 0px;
+    position: absolute;
+    display: inline-flex;
+    overflow-x: scroll;
+    float: left;
+    margin-right: 0px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    -webkit-box-shadow:  0 0 20px rgba(20,20,20,0.3); 
+}
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+#more{
+    display: flex; 
+    background-color: rgba(211, 209, 209, 0.2);
+    color: #7b7a7a;
+    font-family: helvetica, sans-serif;
+    font-size: 13px;
+    float:right;
+    margin-top: 200px;
+    margin-bottom: auto;
+    border-style: hidden;
+}
+#more:hover{
+    filter: brightness(0.5);
+    transition: 0.5s;  
+}
+
+.profile_pic{
+    border-radius: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+.profile_pic:hover {
+    filter: brightness(0.5);
+    transition: 0.5s;
+}
+
+#clickEm{
+    position: relative;
+    margin-left: 45%;
+    font-family: "Abril Fatface";
+    font-size: 30px;
+    color:#03035a;
+    text-shadow: 1px 2px 10px #8b8787; /* blur effect top text */ 
+}
+
+#box{
+    color:#03035a;
+}
+
+.geral{
+    float:left;
+    margin-right: 0px;
+}
+
+#container {
+    display: none;
+    z-index: 1000;
+    background-color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 30px;
+    margin-left: 23%;
+    /* margin-top: 5%; */
+    padding-top: 3%;
+    top: 0;
+    margin-top: 10%;
+    /* width: 900px; */
+    position: absolute;
+}
+
+
+.popupFundo {  /* ADICIONAR */
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.popup {  /* ADICIONAR */
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    transform: translate(-50%, -50%);
+    left: 50vw;
+    top: 50vh;
+    display: block;
+    background-color: white;
+    padding: 2vh;
+}
+
+.nome{
+    font-size: 25px;
+}
+
+
+/*************************************************************
+*****************************************************************************************************************************/

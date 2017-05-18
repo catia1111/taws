@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css.css">
+        <script src="Chart.js"></script>
+        <script src="Chart.bundle.js"></script>
+        <script src="utils.js"></script>
+        <title>SPOTTER</title>
+      
+
+    </head>
+
+    <body>
+        <div>
+            <div id="mapa"></div>
+            <span id="clickEm"></span>
+        </div>
+
+        
+
+        <div class="sidebar">
+           <p class="mainTitle">Spotter</p>
+            <div id="DivPesquisa">
+                <input type="text" id="cidadeInput" placeholder="City..." />
+                <select id="areaInput">
+                    <option value="">Area</option>
+                    <option value="animation">Animation</option>
+                    <option value="architecture">Architecture</option>
+                    <option value="art+direction">Art Direction</option>
+                    <option value="branding">Branding</option>
+                    <option value="design">Design</option>
+                    <option value="digital+art">Digital Art</option>
+                    <option value="drawing">Drawing</option>
+                    <option value="editorial+design">Editorial Design</option>
+                    <option value="Illustration">Illustration</option>
+                    <option value="interaction+design">Interaction Design</option>
+                    <option value="motion+graphics">Motion Graphics</option>
+                    <option value="	multimedia">Multimedia</option>
+                    <option value="photography">Photography</option>
+                    <option value="publishing">Publishing</option>
+                    <option value="ui%2Fux">UI/UX</option>
+                    <option value="visual+arts">Visual Arts</option>
+                    <option value="web+design">Web Design</option>
+                    <option value="typography">Typography</option>
+                </select>
+                <button type="button" id="searchButton">Procurar</button>
+                <button id="grafoBT">Ver Gráfico</button>
+            </div>
+        </div>
+
+
+
+        <!-- GRAFO! -->
+        
+
+        <div id="container" style="width: 50%;">
+            <canvas id="canvas"></canvas>
+        </div>
+
+
+        <div id="userData">
+        </div>
+        <script src="Behance.js"></script>
+        <script src="mapStyle.js"></script>
+        <script src="maps.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyJtdEwXD0QreCxr-8LedlA7QCN6RaZG8&callback=initMap"></script>
+
+    </body>
+
+
+
+</html>
